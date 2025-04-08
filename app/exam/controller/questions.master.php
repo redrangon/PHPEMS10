@@ -333,6 +333,10 @@ class action extends app
 		{
 			$args[] = array("AND","questions.question LIKE :question",'question','%'.$search['keyword'].'%');
 		}
+		if($search['username'])
+		{
+			$args[] = array("AND","questions.questionusername = :questionusername",'questionusername',$search['username']);
+		}
 		if($search['knowsids'])
 		{
 			$args[] = array("AND","find_in_set(questions.questionknowsid,:questionknowsid)",'questionknowsid',$search['knowsids']);

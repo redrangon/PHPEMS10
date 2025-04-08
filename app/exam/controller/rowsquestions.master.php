@@ -359,6 +359,10 @@ class action extends app
 		{
 			$args[] = array("AND","questionrows.qrquestion LIKE :qrquestion",'qrquestion',"%".$search['keyword']."%");
 		}
+		if($search['username'])
+		{
+			$args[] = array("AND","questionrows.qrusername = :qrusername",'qrusername',$search['username']);
+		}
 		if($search['stime'])
 		{
 			$args[] = array("AND","questionrows.qrtime >= :qrtime",'qrtime',strtotime($search['stime']));
