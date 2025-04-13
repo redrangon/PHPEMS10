@@ -90,9 +90,9 @@
 				        {x2;endtree}
 					</tbody>
 				</table>
-				<div class="pagination">
-	            	<ul>{x2;$questions['pages']}</ul>
-		        </div>
+				<ul class="pagination">
+	            	{x2;$questions['pages']}
+		        </ul>
 		    	<script type="text/javascript">
 		    		jQuery(function($) {
 						markSelectedQuestions('ids[]','iselectrowsquestions_{x2;$search['questiontype']}');
