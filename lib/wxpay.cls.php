@@ -146,7 +146,7 @@ class wxpay extends \WxPayNotify
         $input->SetNotify_url(WP."api/wxnotify.php");
         $input->SetTrade_type("JSAPI");
         $input->SetOpenid($openid);
-        $order = WxPayApi::unifiedOrder($config,$input);
+        $order = \WxPayApi::unifiedOrder($config,$input);
         $jsApiParameters = $this->tools->GetJsApiParameters($order);
         return $jsApiParameters;
     }
