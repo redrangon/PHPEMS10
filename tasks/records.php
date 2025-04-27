@@ -1,5 +1,5 @@
 <?php
-
+namespace PHPEMS;
 /*
  * Created on 2013-12-26
  *
