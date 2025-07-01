@@ -26,7 +26,7 @@
 													旧密码
 												</div>
 												<div class="col-xs-8">
-													<input id="oldpassowrd" placeholder="请输入旧密码" type="password" name="oldpassword" needle="true" datatype="password" msg="密码字数必须在6位以上"/>
+													<input class="form-control" id="oldpassowrd" placeholder="请输入旧密码" type="password" name="oldpassword" needle="true" datatype="password" msg="密码字数必须在6位以上"/>
 												</div>
 											</div>
 											<div class="form-group underline">
@@ -34,7 +34,7 @@
 													新密码
 												</div>
 												<div class="col-xs-8">
-													<input id="passowrd1" placeholder="请输入新密码" type="password" name="args[password]" needle="true" datatype="password" msg="密码字数必须在6位以上"/>
+													<input class="form-control" id="passowrd1" placeholder="请输入新密码" type="password" name="args[password]" needle="true" datatype="password" msg="密码字数必须在6位以上"/>
 												</div>
 											</div>
 											<div class="form-group underline">
@@ -42,7 +42,7 @@
 													重复密码
 												</div>
 												<div class="col-xs-8">
-													<input id="password2" placeholder="请再次输入新密码" type="password" name="args[password2]" needle="true" equ="passowrd1" msg="前后两次密码必须一致且不能为空"/>
+													<input class="form-control" id="password2" placeholder="请再次输入新密码" type="password" name="args[password2]" needle="true" equ="passowrd1" msg="前后两次密码必须一致且不能为空"/>
 												</div>
 											</div>
 											<div class="form-group">
